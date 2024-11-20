@@ -9,10 +9,21 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function salutoResponsive(nome) {
+  const adesso = new Date()
+  console.log(typeof adesso.getHours())
+  if (adesso.getHours() <= 13 ) {
+    return `Buongiorno ${nome}`
+  } else if ((adesso.getHours() > 13) && (adesso.getHours() <= 17)) {
+    return `Buon pomeriggio ${nome}`
+  } else {
+    return `Buonasera ${nome}`
+  }
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(salutoResponsive(name))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
