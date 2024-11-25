@@ -26,10 +26,7 @@ function contatoreVocaliConIncludes(stringa) {
   const vocali = 'aeiou';
   let vocaliContate = 0;
   for (let i = 0; i < stringa.length; i++){
-    if (vocali.includes(stringa[i])) {
-      vocaliContate++
-    }
-        
+    if (vocali.includes(stringa[i])) vocaliContate++; 
   }
   return vocaliContate;
 }
@@ -38,8 +35,8 @@ function contatoreVocaliConIncludes(stringa) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
 console.log(contatoreVocali(word))
 console.log(contatoreVocaliConIncludes(word))
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
+

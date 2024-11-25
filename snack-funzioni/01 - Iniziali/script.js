@@ -2,7 +2,7 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-console.log(names[0].split(""))
+
 
 
 // Dichiara la funzione qui.
@@ -15,10 +15,13 @@ const inizialiArray = (array) => {
   let iniziale = '';
   for(let i = 0; i < array.length; i++) {
    iniziale += array[i].split("").at(0)
+   //oppure iniziale += array[i][0]
  }
  return iniziale.split("")
 }
+
 console.log(inizialiArray(names))
+
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

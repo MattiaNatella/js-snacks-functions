@@ -7,7 +7,7 @@ const alfabeto = prompt('inserisci una lettera')
 function ricerca(arrayStringhe, lettera) {
   let arrayFiltrato = [];
   for(let i = 0; i < arrayStringhe.length; i++) {
-   if (arrayStringhe[i].includes(lettera)) {
+   if (arrayStringhe[i][0].includes(lettera)) {
     arrayFiltrato.push(arrayStringhe[i])
     }                                      
   }
